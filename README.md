@@ -1,42 +1,69 @@
-![alt text](https://i.imgur.com/LzxZgzh.png)
+![alt text](https://i.ibb.co/zh1Q60wM/Screenshot-2026-09-20-215854.png)
 
-# Uasset-Model-Fixer
-A lightweight tool for repairing broken Unreal Engine models `.uasset`/`.uexp` for GTA Trilogy DE and packing/unpacking `.pak` files with drag-and-drop simplicity.
+# GTA DE Modding Utility
+
+A comprehensive modding toolkit for **Grand Theft Auto: The Trilogy – The Definitive Edition**, bringing together tools for repairing models, editing vehicles, working with materials and textures, managing `.pak` files, localization, and other Unreal Engine assets.
 
 # **Key features include:**
 
-- **Model Repair:**  
-  - Fixes `.uasset` files with serialization errors using [Hypermodule’s MeshAibRemover](https://github.com/hypermodule/MeshAibRemover), powered by [CUE4Parse](https://github.com/FabianFG/CUE4Parse).  
-  - **New:** Supports fixing multiple models at once for faster workflows.
+- **Model Repair:**
+  - Fixes `.uasset` / `.uexp` files affected by serialization errors using [Hypermodule’s MeshAibRemover](https://github.com/hypermodule/MeshAibRemover), powered by [CUE4Parse](https://github.com/FabianFG/CUE4Parse).
+  - Supports fixing multiple models at once for faster workflows.
 
-- **PAK Management:**  
-  - Drag a **folder** → creates an uncompressed `.pak` file in the same folder.  
-  - Drag a **.pak file** → unpacks its contents to the **Desktop**.  
-  - Files are automatically organized based on what you dragged.
- 
-- **Color Management (Tools):**  
-  - Color pick values from any image you choose.  
-  - Get RGB values of any color. 
-  - RGB/HEX to decimal convertor (helps editing colors of materials).
+- **Vehicle Tools:**
+  - Transfer vehicle lighting data from original GTA Trilogy DE vehicles to custom models.
+  - Edit vehicle light material-slot indices.
+  - Edit wheel mesh references.
+  - Transfer and edit various vehicle properties.
+  - Edit siren material-slot indices.
+  - View and inspect material slots and mesh sections.
 
-- **Automatic Setup:** Downloads required resources on first launch, ensuring everything works out of the box.  
+- **PAK Management:**
+  - Drag a **folder** → creates an uncompressed `.pak` file.
+  - Create compressed `.pak` files.
+  - Drag a **.pak file** → unpacks its contents.
+  - Files are automatically organized based on the operation being performed.
 
-- **User-Friendly Interface:** Dark-themed window with hover effects, custom fonts, and clickable links to related resources.  
+- **Asset & Material Tools:**
+  - Inspect and edit Unreal Engine asset data.
+  - Create and edit GTA Trilogy DE materials.
+  - Work with material instances and material properties.
+  - Create game materials for custom assets.
+  - Inspect and edit mesh-related asset data.
 
-- **Persistent Window Position:** Remembers the last screen and position the app was opened in for consistent workflow.  
+- **Color & Texture Tools:**
+  - Pick colors directly from images.
+  - Get RGB color values.
+  - Convert RGB and HEX values to Unreal Engine-compatible decimal/float values.
+  - Utilities for working with GTA Trilogy DE textures and materials.
 
-- **Integrated Shortcuts:** Quickly create a desktop shortcut for faster access.
+- **Automatic Setup:**
+  - Downloads required resources on first launch where needed (500MB of free space needed!).
+  - Helps ensure required tools and dependencies are available without complicated manual setup.
 
-- **Integrated Tools & Tutorials:** Access helpful links and tutorials directly from the **Tools** and **Help** menus in the top bar.  
+- **User-Friendly Interface:**
+  - Dark-themed interface designed for long modding sessions.
+  - Custom fonts, hover effects and organised tool sections.
+  - Integrated links to useful resources, tutorials and documentation.
 
-Designed to assist both modders and developers, **Model Fixer** saves time and effort when working with Unreal Engine models and archives, making asset repair and packaging a seamless process.
+- **Persistent Window Position:**
+  - Remembers the last screen and position the application was opened on.
+  - Supports multiple monitor setups and different display resolutions.
 
-## Credits  
+- **Integrated Tools & Shortcuts:**
+  - Quickly launch commonly used modding tools directly from the application.
+  - Create a desktop shortcut for faster access.
+  - Access helpful links and tutorials directly from the **Tools** and **Help** menus.
 
-This project would not be possible without the amazing work of others:  
+Designed to assist both modders and developers, **GTA DE Modding Utility** brings commonly used GTA Trilogy DE modding tools and workflows together into one application, making asset editing, repair, conversion and packaging easier and more efficient.
 
-- **[Hypermodule’s AIBRemover](https://github.com/hypermodule/AIBRemover)** – Provides the core functionality for repairing Unreal Engine `.uasset` files.  
-- **[CUE4Parse](https://github.com/FabianFG/CUE4Parse)** – The powerful Unreal Engine asset parser that AIBRemover is built upon.
-- **[UnrealPak](https://github.com/xamarth/unrealpak)** – Used for packing and unpacking .pak files.  
+## Credits
+
+This project would not be possible without the amazing work of others:
+
+- **[Hypermodule’s MeshAibRemover](https://github.com/hypermodule/MeshAibRemover)** – Provides the core functionality for repairing affected Unreal Engine models.
+- **[CUE4Parse](https://github.com/FabianFG/CUE4Parse)** – A powerful Unreal Engine asset parser used by the model repair tools.
+- **[UAssetGUI](https://github.com/atenfyr/UAssetGUI)** – A powerful Unreal Engine asset editor used for inspecting and editing `.uasset` files.
+- **[UnrealPak](https://github.com/xamarth/unrealpak)** – Used for packing and unpacking `.pak` files.
 
 Special thanks to their developers for making these tools available to the community 👏
